@@ -9,7 +9,7 @@ def main():
     cap = cv2.VideoCapture(VIDEO_PATH)
 
     if not cap.isOpened():
-        print("❌ Impossible d'ouvrir la vidéo")
+        print("Impossible d'ouvrir la vidéo")
         return
 
     os.makedirs("data/outputs", exist_ok=True)
@@ -27,7 +27,7 @@ def main():
 
             height, width, _ = frame.shape
 
-            # 🎯 Fake player detection (Sprint 1 = pipeline, pas précision)
+            # Fake player detection (Sprint 1 = pipeline, pas précision)
             player_x = width // 2
             player_y = height // 2
 
@@ -35,7 +35,7 @@ def main():
             frame_id += 1
 
     cap.release()
-    print("✅ CSV généré avec succès :", OUTPUT_CSV)
+    print("CSV généré avec succès :", OUTPUT_CSV)
 
 if __name__ == "__main__":
     main()
