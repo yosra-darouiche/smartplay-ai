@@ -1,0 +1,14 @@
+# Environnement virtuel
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Données lourdes
+data/raw/
+data/frames/
+
+# Fichiers système
+.env
+.DS_Store
