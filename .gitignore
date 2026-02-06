@@ -5,9 +5,19 @@ venv/
 __pycache__/
 *.pyc
 
-# Données lourdes
-data/raw/
-data/frames/
+# Données lourdes (ignorées)
+data/raw/*
+data/frames/*
+
+# Autoriser les images de test
+!data/
+# Autoriser les images de test
+!data/
+!data/test/
+!data/test/**/*.jpg
+!data/test/**/*.png
+!data/test/**/*.jpeg
+
 
 # Fichiers système
 .env
