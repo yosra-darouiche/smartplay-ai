@@ -1,24 +1,18 @@
-# Environnement virtuel
-venv/
-
-# Python
-__pycache__/
-*.pyc
-
-# Données lourdes (ignorées)
-data/raw/*
-data/frames/*
-
-# Autoriser les images de test
-!data/
-# Autoriser les images de test
-!data/
-!data/test/
-!data/test/**/*.jpg
-!data/test/**/*.png
-!data/test/**/*.jpeg
-
-
-# Fichiers système
+# Environnements
 .env
+venv/
+__pycache__/
+
+# Conda
+*.conda
+*.env
+
+# Data (visages)
+data/raw/
+data/aligned_faces/
+
+# Models
+*.onnx
+
+# OS
 .DS_Store
