@@ -10,6 +10,7 @@ __pycache__/
 # Data (visages)
 data/raw/
 data/aligned_faces/
+data/enrolled_users/
 
 # Models
 *.onnx
